@@ -7,7 +7,7 @@ export const ForbesListItem = ({ name, capital, avatar, isIncrease }) => {
   return (
     <li className={style.item}>
       <img className={style.avatar} src={avatar} alt={name} />
-      <h3 className={style.title}>Mark Zuckerberg</h3>
+      <h3 className={style.title}>{name}</h3>
       <span className={style.capital}>
         {capital} <BiDollarCircle color="#2196f3" size={22} />
         {isIncrease ? <FcBullish /> : <FcBearish />}
